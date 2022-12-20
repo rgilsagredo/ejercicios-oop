@@ -18,5 +18,12 @@ public class Circulo {
         this.radio = radio;
     }
 
+    @Override
+    public String toString() {
+        return "Circulo [radio=" + this.radio + "]";
+    }
+
+    
+
     
 }
