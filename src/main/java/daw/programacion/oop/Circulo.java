@@ -25,6 +25,10 @@ public class Circulo {
         return pow(this.radio, 2) * PI;
     }
 
+    public double getCircunferencia() {
+        return 2 * PI * this.radio;
+    }
+
     @Override
     public String toString() {
         return "Circulo [radio=" + this.radio + "]";
