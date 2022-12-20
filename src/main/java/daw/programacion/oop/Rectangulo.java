@@ -1,9 +1,9 @@
 package daw.programacion.oop;
 
 public class Rectangulo {
-    private float ancho =  1.0f;
+    private float ancho = 1.0f;
     private float alto = 1.0f;
-    
+
     public Rectangulo() {
     }
 
@@ -13,7 +13,7 @@ public class Rectangulo {
     }
 
     public float getAncho() {
-        return ancho;
+        return this.ancho;
     }
 
     public void setAncho(float ancho) {
@@ -21,11 +21,19 @@ public class Rectangulo {
     }
 
     public float getAlto() {
-        return alto;
+        return this.alto;
     }
 
     public void setAlto(float alto) {
         this.alto = alto;
+    }
+
+    public float getArea() {
+        return this.alto * this.ancho;
+    }
+
+    public float getPerimetro() {
+        return 2 * (this.alto + this.ancho);
     }
 
     @Override
@@ -33,5 +41,4 @@ public class Rectangulo {
         return "Rectangulo [ancho=" + ancho + ", alto=" + alto + "]";
     }
 
-    
 }
