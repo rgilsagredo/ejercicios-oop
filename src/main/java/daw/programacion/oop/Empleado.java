@@ -34,6 +34,19 @@ public class Empleado {
         this.salario = salario;
     }
 
+    public String getNombreCompleto() {
+        return this.nombre + " " + this.apellido;
+    }
+
+    public double getSueldoAnual() {
+        return this.salario * 12;
+    }
+
+    public double subirSalario(double porcentaje) {
+        this.salario += this.salario * porcentaje;
+        return this.salario;
+    }
+
     @Override
     public String toString() {
         return "Empleado [id=" + id + ", salario=" + salario + ", nombre=" + nombre + ", apellido=" + apellido + "]";
