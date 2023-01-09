@@ -30,6 +30,7 @@ public class Cuenta {
     }
 
     public double meterDinero(double cantidad) {
+        // hacer throw exception
         this.saldo += cantidad;
         return this.saldo;
     }
@@ -38,15 +39,18 @@ public class Cuenta {
         if (cantidad <= this.saldo) {
             this.saldo -= cantidad;
         } else {
-            System.out.println("No hay saldo suficiente");
+            System.out.println("No hay saldo suficiente"); // cambiar por exceptios??
         }
 
         return this.saldo;
     }
 
     public double transferirACuenta(Cuenta cuenta, double cantidad) {
-        if (this.saldo != this.sacarDinero(cantidad)) {
-            cuenta.saldo += cantidad;
+        double saldoActual = this.saldo;
+        this.sacarDinero(cantidad);
+
+        if (this.saldo != saldoActual) {
+            cuenta.meterDinero(cantidad);
         } else {
             System.out.println("No se puede hacer la transferencia");
         }
