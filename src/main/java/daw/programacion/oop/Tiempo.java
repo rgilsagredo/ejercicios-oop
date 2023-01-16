@@ -34,6 +34,7 @@ public class Tiempo {
 
     public void setSegundo(int segundo) {
         this.segundo = segundo;
+
     }
 
     public void setTiempo(int hora, int minuto, int segundo) {
@@ -54,7 +55,26 @@ public class Tiempo {
 
     @Override
     public String toString() {
-        return "Tiempo [hora=" + hora + ", minuto=" + minuto + ", segundo=" + segundo + "]";
+
+        String[] atributosString = new String[3];
+        int[] atributosInt = { this.hora, this.minuto, this.segundo };
+
+        int i = 0;
+        for (int atributo : atributosInt) {
+            atributosString[i] = formatearAtributo(atributo);
+            i++;
+        }
+
+        String horaFormateada = atributosString[0];
+        for(int j = 1; j < atributosString.length; j++){
+            horaFormateada += ":" + atributosString[j];
+        }
+
+        return horaFormateada;
+    }
+
+    private String formatearAtributo(int atributo) {
+        return (atributo < 10) ? "0" + atributo : Integer.toString(atributo);
     }
 
 }
