@@ -6,7 +6,6 @@ Son ejercicios para practicar OOP y tests
 
 ### Todo
 
-- [ ] Tests para Tiempo  
 - [ ] hacer tests parametrizados para el radio del circulo  
 - [ ] Tests para Rectangulo  
 - [ ] Tests para Pelota  
@@ -17,6 +16,7 @@ Son ejercicios para practicar OOP y tests
 
 ### In Progress
 
+- [ ] Tests para Tiempo  
 - [ ] Tests para Circulo  
 
 ### Done ✓

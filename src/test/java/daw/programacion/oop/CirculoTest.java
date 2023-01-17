@@ -65,7 +65,7 @@ public class CirculoTest {
     @Test
     void radioDeConstructorOtroEstaBien() {
         double expected = radio;
-        double radio = circulo.getRadio();
+        double radio = circulo2.getRadio();
         assertEquals(expected, radio);
     }
 
