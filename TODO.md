@@ -6,9 +6,6 @@ Son ejercicios para practicar OOP y tests
 
 ### Todo
 
-- [ ] Tiempo: checkar imputs  
-- [ ] metodo Tiempo.restarSegundo ¿qué pasa si el sec=0?  
-- [ ] metodo Timepo.sumarSegundo ¿qué pasa si el sec=59?  
 - [ ] Tests para Tiempo  
 - [ ] hacer tests parametrizados para el radio del circulo  
 - [ ] Tests para Rectangulo  
@@ -24,5 +21,8 @@ Son ejercicios para practicar OOP y tests
 
 ### Done ✓
 
+- [x] Tiempo: checkar imputs  
+- [x] metodo Timepo.sumarSegundo ¿qué pasa si el sec=59?  
+- [x] metodo Tiempo.restarSegundo ¿qué pasa si el sec=0?  
 - [x] Tiempo: casos espaciales en toString()  
 
