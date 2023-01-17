@@ -53,24 +53,61 @@ public class Tiempo {
         return this;
     }
 
+    // @Override
+    // public String toString() {
+
+    // String[] atributosString = new String[3];
+    // int[] atributosInt = { this.hora, this.minuto, this.segundo };
+
+    // int i = 0;
+    // for (int atributo : atributosInt) {
+    // atributosString[i] = formatearAtributo(atributo);
+    // i++;
+    // }
+
+    // String horaFormateada = atributosString[0];
+    // for(int j = 1; j < atributosString.length; j++){
+    // horaFormateada += ":" + atributosString[j];
+    // }
+
+    // return horaFormateada;
+    // }
+
     @Override
     public String toString() {
 
-        String[] atributosString = new String[3];
         int[] atributosInt = { this.hora, this.minuto, this.segundo };
+        // String[] atributosString = new String[atributosInt.length];
 
-        int i = 0;
-        for (int atributo : atributosInt) {
-            atributosString[i] = formatearAtributo(atributo);
-            i++;
+        // int i = 0;
+
+        // for (int atributo : atributosInt) {
+        // atributosString[i] = formatearAtributo(atributo);
+        // i++;
+        // }
+
+        String tiempoFormateado = formatearAtributo(atributosInt[0]);
+        for (int i = 1; i < atributosInt.length; i++) {
+            tiempoFormateado += ":" + formatearAtributo(atributosInt[i]);
         }
 
-        String horaFormateada = atributosString[0];
-        for(int j = 1; j < atributosString.length; j++){
-            horaFormateada += ":" + atributosString[j];
-        }
+        // String asdf = "";
 
-        return horaFormateada;
+        // for (int i = 0; i < atributosInt.length; i++) {
+        // atributosString[i] = formatearAtributo(atributosInt[i]);
+        // if (i == atributosInt.length - 1) {
+        // asdf += atributosString[i];
+        // } else {
+        // asdf += atributosString[i] + ":";
+        // }
+        // }
+
+        // String tiempoFormateado = atributosString[0];
+        // tiempoFormateado += ":" + atributosString[1];
+        // tiempoFormateado += ":" + atributosString[2];
+
+        return tiempoFormateado;
+
     }
 
     private String formatearAtributo(int atributo) {

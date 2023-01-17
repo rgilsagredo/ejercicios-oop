@@ -9,8 +9,8 @@ Son ejercicios para practicar OOP y tests
 - [ ] Tiempo: checkar imputs  
 - [ ] metodo Tiempo.restarSegundo ¿qué pasa si el sec=0?  
 - [ ] metodo Timepo.sumarSegundo ¿qué pasa si el sec=59?  
-- [ ] hacer tests parametrizados para el radio del circulo  
 - [ ] Tests para Tiempo  
+- [ ] hacer tests parametrizados para el radio del circulo  
 - [ ] Tests para Rectangulo  
 - [ ] Tests para Pelota  
 - [ ] Tests para Fecha  
